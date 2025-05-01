@@ -1,0 +1,74 @@
+/* ====== Dark Chai Samosa View Members Theme (Dimmed) ====== */
+:root {
+  --deep-spice: #1d140c;        /* Dimmed coffee brown */
+  --warm-clay: #352517;         /* Dimmed roasted cocoa */
+  --samosa-gold: #b98c13;       /* Slightly toned-down gold */
+  --spice-accent: #9c4f32;      /* Dimmed spice accent */
+  --card-bg: #120d08;           /* Darker card background */
+  --text-light: #cfc2a6;        /* Dimmed cream text */
+  --text-lighter: #e4dac3;      /* Softer light text */
+  --border-dark: #2e1f12;       /* Darker borders */
+}
+.view-members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--deep-spice);
+}
+
+.member-card {
+  width: 250px;
+  background: var(--card-bg);
+  border: 2px solid var(--border-dark);
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--text-light);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
+.member-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.member-card .info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.member-card h3 {
+  margin: 0.5rem 0;
+  color: var(--samosa-gold);
+}
+
+.member-card p {
+  font-size: 0.95rem;
+  color: var(--text-lighter);
+}
+
+.view-button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--spice-accent);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: var(--samosa-gold);
+  color: var(--deep-spice);
+}

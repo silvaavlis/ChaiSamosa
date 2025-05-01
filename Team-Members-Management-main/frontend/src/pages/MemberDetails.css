@@ -1,0 +1,79 @@
+/* App.css or MemberDetails.css */
+
+/* Root variables for your color palette */
+:root {
+  --deep-spice: #1d140c;        /* Dimmed coffee brown */
+  --warm-clay: #352517;         /* Dimmed roasted cocoa */
+  --samosa-gold: #b98c13;       /* Slightly toned-down gold */
+  --spice-accent: #9c4f32;      /* Dimmed spice accent */
+  --card-bg: #120d08;           /* Darker card background */
+  --text-light: #cfc2a6;        /* Dimmed cream text */
+  --text-lighter: #e4dac3;      /* Softer light text */
+  --border-dark: #2e1f12;       /* Darker borders */
+}
+
+body {
+  background-color: var(--deep-spice); /* Dark background for the whole page */
+  color: var(--text-light); /* Text color for readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.member-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+.member-detail-card {
+  background-color: var(--card-bg); /* Darker card background */
+  color: var(--text-light); /* Dark text on light background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--border-dark); /* Dark border to contrast with the background */
+  position: relative;
+}
+
+.member-detail-card:hover {
+  transform: translateY(-10px); /* Floating effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.member-detail-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid var(--samosa-gold); /* Gold border around the image */
+}
+
+.member-detail-card h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--text-lighter); /* Softer text color for the name */
+}
+
+.member-detail-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.member-detail-card p strong {
+  font-weight: bold;
+  color: var(--samosa-gold); /* Gold color for strong/important text */
+}
+
+.member-detail-card p:last-of-type {
+  margin-bottom: 0;
+}
