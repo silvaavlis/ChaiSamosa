@@ -1,4 +1,3 @@
-# Golden Coders - Team Members Management App
 
 A full-stack app using MERN stack for managing student team members.
 
